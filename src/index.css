@@ -1,0 +1,32 @@
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+html {
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.scroll-container {
+  scrollbar-gutter: stable;
+}
+.scroll-container::-webkit-scrollbar {
+  width: 4px;
+}
+.scroll-container::-webkit-scrollbar-track {
+  background-color: rgba(244, 236, 232, 1);
+  border-radius: 8px;
+}
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: rgba(13, 136, 129, 1);
+  border-radius: 8px;
+}

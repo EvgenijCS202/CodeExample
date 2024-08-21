@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 8px;
+  gap: 12px;
+}
+
+.container.disabled {
+  justify-content: center;
+}
+
+.container:not(.selected).min {
+  background-color: rgba(235, 251, 250, 1);
+}
+
+.container .date {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  color: rgba(45, 36, 35, 1);
+  text-align: center;
+  width: 100%;
+}
+
+.container:not(.selected).min .date {
+  color: rgba(13, 136, 129, 1);
+}
+
+.container .price {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 1;
+  color: rgba(108, 102, 101, 1);
+  text-align: center;
+  width: 100%;
+}
+
+.container:not(.selected).min .price {
+  color: rgba(137, 192, 184, 1);
+}
+
+.container:not(.selected).inactive .date {
+  color: rgba(160, 154, 153, 1);
+}
+
+.container:not(.selected).disabled .date {
+  color: rgba(108, 102, 101, 0.64);
+}
+
+.container.selected .date {
+  color: rgba(231, 224, 220, 1);
+}
+
+.container.selected .price {
+  color: rgba(231, 224, 220, 1);
+}
+
+.base {
+  border: 1px solid rgba(231, 224, 220, 1);
+}
+
+.selected {
+  border: 1px solid rgba(60, 174, 167, 1);
+  background-color: rgba(13, 136, 129, 1);
+}
